@@ -1,0 +1,89 @@
+/* Mengatur tampilan halaman */
+body {
+    background-color: #f5e1c8;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Judul */
+h1 {
+    color: #2c3e50;
+}
+
+/* Gambar */
+img {
+    border-radius: 10px;
+    border: 3px solid #333;
+    margin: 10px 0;
+}
+
+/* List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.red {
+    color: red;
+}
+
+.purple {
+    color: purple;
+}
+
+/* Tabel */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 2px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #d35400;
+    color: white;
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Tombol */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.edit-btn {
+    background-color: #f1c40f;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
