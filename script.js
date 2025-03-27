@@ -13,11 +13,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Event listener untuk tombol "Simpan"
     saveButton.addEventListener("click", function() {
         let namaInput = document.getElementById("nama").value.trim();
-        let KelahiranInput = document.getElementById("Kelahiran").value.trim();
+        let kelahiranInput = document.getElementById("kelahiran").value.trim();
         let umurInput = document.getElementById("umur").value.trim();
 
 
-        if (namaInput === "" || KelahiranInput === "" || umurInput === "" ) {
+        if (namaInput === "" || kelahiranInput === "" || umurInput === "" ) {
             alert("Semua kolom harus diisi!");
             return;
         }
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let newRow = table.insertRow();
         newRow.innerHTML = `
             <td>${namaInput}</td>
-            <td>${KelahiranInput}</td>
+            <td>${kelahiranInput}</td>
             <td>${umurInput}</td>
             <td>
                 <button class="edit-btn">Edit</button>
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         `;
 
         document.getElementById("nama").value = "";
-        document.getElementById("Kelahiran").value = "";
+        document.getElementById("kelahiran").value = "";
         document.getElementById("umur").value = "";
         alert("Data berhasil disimpan!");
     });
@@ -47,12 +47,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (target.classList.contains("edit-btn")) {
             let newnama = prompt("Masukkan nama Baru:", cells[0].textContent);
-            let newKelahiran = prompt("Masukkan Kelahiran Baru:", cells[1].textContent);
+            let newkelahiran = prompt("Masukkan kelahiran Baru:", cells[1].textContent);
             let newUmur = prompt("Masukkan Umur Baru:", cells[2].textContent);
 
-            if (newnama && newKelahiran && newUmur) {
+            if (newnama && newkelahiran && newUmur) {
                 cells[0].textContent = newnama;
-                cells[1].textContent = newKelahiran;
+                cells[1].textContent = newkelahiran;
                 cells[2].textContent = newUmur;
                 alert("Data berhasil diperbarui!");
             }
